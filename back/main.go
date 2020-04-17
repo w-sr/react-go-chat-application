@@ -7,7 +7,7 @@ import (
 	"github.com/w-sr/react-go-chat-application/back/pkg/websocket"
 )
 
-func serveWs(pool *websokcet.Pool, w http.ResponseWriter, r *http.Request) {
+func serveWs(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Websocket Endpoint Hit")
 	conn, err := websocket.Upgrade(w, r)
 	if err != nil {
