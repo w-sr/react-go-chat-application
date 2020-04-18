@@ -25,13 +25,13 @@ const Message = (props) => {
             {message}
           </div>
           <div className="icon-1">
-            {userName && userName[0].toUpperCase()}
+            {name && name[0].toUpperCase()}
           </div>
         </div>
       ) : (
         <div className="other">
           <div className="icon-2">
-            {userName && userName[0].toUpperCase()}
+            {name && name[0].toUpperCase()}
           </div>
           <div className="msg-area-2">
             {message}
