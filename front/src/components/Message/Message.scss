@@ -1,15 +1,70 @@
 .Message {
-  display: block;
-  background-color: white;
-  margin: 10px auto;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
-  border-radius: 5px;
-  clear: both;
+  display: flex;
+  align-items: center;
 
   &.me {
     color: white;
     float: right;
     background-color: #328ec4;
+  }
+
+  .self {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    background: #328ec4;
+    color: red;
+  }
+
+  .msg-area-1 {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    clear: both;
+    margin-right: 10px;
+  }
+
+  .other {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    background: #328ec4;
+    color: blue;
+    margin-right: 10px;
+  }
+
+  .msg-area-2 {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    clear: both;
   }
 }
